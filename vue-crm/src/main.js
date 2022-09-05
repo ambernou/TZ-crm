@@ -1,6 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import store from './store'
 
-import './assets/main.css'
+// import './assets/main.css'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(store)
+app.mount('#app')
